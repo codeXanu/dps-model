@@ -125,13 +125,15 @@ export default function ApplicationForm() {
       fd.append("portfolio", showcase);
       if (coverFile) fd.append("coverLetter", coverFile);
 
-      const response = await fetch("http://localhost:3000/api/raw/applications", {
+      const response = await fetch("https://my-digitalschool-al87q.ondigitalocean.app/api/raw/applications", {
         method: "POST",
         body: fd,
       });
 
-      if (response.status === 204) {
+      if (response.status === 200) {
         window.location.href = "https://www.digitalproductschool.io/application-success";
+        const data = await response.json();
+        console.log(data.message);
       } else {
         window.location.href = "https://www.digitalproductschool.io/application-fail";
       }
