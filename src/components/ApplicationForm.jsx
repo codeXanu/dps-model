@@ -145,6 +145,7 @@ export default function ApplicationForm() {
   }
 
   return (
+  
     <form className="application-form" noValidate onSubmit={handleSubmit}>
       {/* Batch Select */}
       <div className="input-wrapper">
@@ -412,5 +413,6 @@ export default function ApplicationForm() {
         </button>
       </div>
     </form>
+   
   );
 }
