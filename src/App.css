@@ -183,12 +183,13 @@ body {
   .cta-section {
     flex-direction: column;
     align-items: center;
-    padding: 24px;
+    padding-top: 30px;
   }
 
   .div-blue-cta {
     width: 100%;
     margin-top: 0;
+	margin-bottom: 0;
     padding: 32px 24px;
     box-sizing: border-box;
   }
@@ -210,7 +211,8 @@ body {
   .image-36 {
     width: 100%;
     max-width: 100%;
-    margin: 24px 0 0 0;
+	height: 25vh;
+    margin: 0 0 0 0;
     box-shadow: none;
   }
 }
@@ -227,6 +229,9 @@ body {
 
   .div-blue-cta {
     padding: 24px 16px;
+  }
+  .image-36 {
+	height: 20vh;
   }
 }
 

@@ -39,8 +39,8 @@ export default function HeroSection() {
                     />
                     
             </section>
-                   <div class="apply-banner">
-                <p class="highlight-animated">
+                   <div className="apply-banner">
+                <p className="highlight-animated">
                 <span ><strong>Apply now </strong></span>
                 for the upcoming batch and become a digital product builder!
                 </p>
